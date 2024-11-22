@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+
+    <title>Responsive e-commerce website - Crypticalcoder</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxs-shopping-bags nav__logo-icon"></i> e-shopper
+            </a>
+
+            <div class="nav__menu" id="nav-menu"> 
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">cart</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">Faq"s</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link ">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-toggle">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bxs-shopping-bag"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== CART ===============-->
+    <div class="cart show-cart" id="cart">
+        <i class="bx bx-x cart__close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-1.png" alt="" class="cart-img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">$12</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                           </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-2.png" alt="" class="cart-img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodia</h3>
+                    <span class="cart__price">$16</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                           </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__trash"></i>
+                    </div>
+                </div>
+            </article>    
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-3.png" alt="" class="cart-img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon</h3>
+                    <span class="cart__price">$18</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                           </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-intem">3 item</span>
+            <span class="cart__prices-total">$28</span>
+        </div>
+    </div>
+
+
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home container">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+
+                <section class="swiper-slide">
+                    <div class="home__content grid">
+                        <div class="home__group"> 
+                            <img src="assets/img/slide-2.png" alt="" class="home__img">
+                            <div class="home__indicador"></div>
+
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">The cardigan</h4>
+                                <span class="home__details-subtitle">woolen</span>
+                            </div>
+                        </div>
+
+
+                        <div class="home__data">
+                            <h3 class="home__subtitle">#1 trending item</h3>
+                            <h1 class="home__title">ORIGINAL <br>IS NEVER <br> FINISHED!!</h1>
+                            <P class="home__description">A specialist label creating luxury essentials. 
+                                thically crafted with an unwavering commitment to exceptional quality.</P>
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy now</a>
+                                    <a href="details.html" class="button--link button--flex">View details <i class="bx bx-right-arrow-alt button__icon "></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </section>      
+                
+                <section class="swiper-slide">
+                    <div class="home__content grid">
+                        <div class="home__group"> 
+                            <img src="assets/img/slide-3.png" alt="" class="home__img">
+                            <div class="home__indicador"></div>
+
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">jqueezy</h4>
+                                <span class="home__details-subtitle">Ski suit</span>
+                            </div>
+                        </div>
+
+
+                        <div class="home__data">
+                            <h3 class="home__subtitle">#2 top best duo</h3>
+                            <h1 class="home__title">fall <br>winter <br> 2022!!</h1>
+                            <P class="home__description">A specialist label creating luxury essentials. 
+                                thically crafted with an unwavering commitment to exceptional quality.</P>
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy now</a>
+                                    <a href="details.html" class="button--link button--flex">View details <i class="bx bx-right-arrow-alt button__icon "></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </section>   
+                
+                <section class="swiper-slide">
+                    <div class="home__content grid">
+                        <div class="home__group"> 
+                            <img src="assets/img/slide-1.png" alt="" class="home__img">
+                            <div class="home__indicador"></div>
+
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">jurry</h4>
+                                <span class="home__details-subtitle">zipper</span>
+                            </div>
+                        </div>
+
+
+                        <div class="home__data">
+                            <h3 class="home__subtitle">#3 trending item</h3>
+                            <h1 class="home__title">sale 20% <br>off on <br> everything!!</h1>
+                            <P class="home__description">A specialist label creating luxury essentials. 
+                                thically crafted with an unwavering commitment to exceptional quality.</P>
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy now</a>
+                                    <a href="details.html" class="button--link button--flex">View details <i class="bx bx-right-arrow-alt button__icon "></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </section>      
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section">
+            <div class="discount__container container grid">
+                <img src="assets/img/discount.png" alt="" class="discount__img">
+
+                <div class="discount__data">
+                    <h2 class="discount__title">50% Discount ,<br>on new products</h2>
+                    <a href="#" class="button">Go  to new</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== NEW ARRIVALS ===============-->
+        <section class="new section">
+            <h2 class="section__title">New  Arrivals</h2>
+
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                                <img src="assets/img/new-1.png" alt="" class="new__img">
+                                <h3 class="new__title">Wundbreaker Jacket</h3>
+                                <span class="new__sutitle">Accessory</span>
+
+                                <div class="new__prices">
+                                    <span class="new__price">$14.99</span>
+                                    <span class="new__discount">30.99</span>
+                                </div>
+
+                                <a href="details.html" class="button new__button">
+                                    <i class="bx bx-cart-alt new__icon"></i>
+                                </a>
+                            </div>
+
+                            <div class="new__content swiper-slide">
+                                <div class="new__tag">New</div>
+                                    <img src="assets/img/new-2.png" alt="" class="new__img">
+                                    <h3 class="new__title">Air jordan</h3>
+                                    <span class="new__sutitle">Accessory</span>
+    
+                                    <div class="new__prices">
+                                        <span class="new__price">$11.99</span>
+                                        <span class="new__discount">20.99</span>
+                                    </div>
+    
+                                    <a href="details.html" class="button new__button">
+                                        <i class="bx bx-cart-alt new__icon"></i>
+                                    </a>
+                                </div>
+
+                                <div class="new__content swiper-slide">
+                                    <div class="new__tag">New</div>
+                                        <img src="assets/img/new-4.png" alt="" class="new__img">
+                                        <h3 class="new__title">Fur Jacket</h3>
+                                        <span class="new__sutitle">Accessory</span>
+        
+                                        <div class="new__prices">
+                                            <span class="new__price">$14.99</span>
+                                            <span class="new__discount">$25.99</span>
+                                        </div>
+        
+                                        <a href="details.html" class="button new__button">
+                                            <i class="bx bx-cart-alt new__icon"></i>
+                                        </a>
+                                    </div>
+
+                                <div class="new__content swiper-slide">
+                                        <div class="new__tag">New</div>
+                                            <img src="assets/img/new-1.png" alt="" class="new__img">
+                                            <h3 class="new__title">Fleece Jacket</h3>
+                                            <span class="new__sutitle">Accessory</span>
+            
+                                            <div class="new__prices">
+                                                <span class="new__price">$14.99</span>
+                                                <span class="new__discount">$10.99</span>
+                                            </div>
+            
+                                            <a href="details.html" class="button new__button">
+                                                <i class="bx bx-cart-alt new__icon"></i>
+                                            </a>
+                                        </div>
+
+                                <div class="new__content swiper-slide">
+                                            <div class="new__tag">New</div>
+                                                <img src="assets/img/new-5.png" alt="" class="new__img">
+                                                <h3 class="new__title"> nike hoodie</h3>
+                                                <span class="new__sutitle">Accessory</span>
+                
+                                                <div class="new__prices">
+                                                    <span class="new__price">$14.99</span>
+                                                    <span class="new__discount">$10.99</span>
+                                                </div>
+                
+                                                <a href="details.html" class="button new__button">
+                                                    <i class="bx bx-cart-alt new__icon"></i>
+                                                </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+        <!--=============== STEPS ===============-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title">How to order products <br>from e-shopper</h2>
+
+                <div class="steps__container grid">
+
+                    <div class="steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class="steps__card-title">Choose Products</h3>
+                        <p class="steps__card-descriptios">
+                            we have several varieties products you can choose from.
+                        </p>
+                    </div>
+
+                    <div class="steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class="steps__card-title">Place an order</h3>
+                        <p class="steps__card-descriptios">
+                            Once your order is set, we move to the next step which is the shipping.
+                        </p>
+                    </div>
+
+                    <div class="steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class="steps__card-title">Get order delivered</h3>
+                        <p class="steps__card-descriptios">
+                            Our delivery process is easy, you receive the order direct to your home.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== NEWSLETTER ===============-->
+        <section class="newsletter section">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Our Newsletter</h2>
+                <p class="newsletter__description">
+                    Promotion new products and sales. Directly to your inbox
+                </p>
+                <form action="" class="newsletter__form">
+                    <input type="text" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
